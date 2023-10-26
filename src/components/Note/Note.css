@@ -1,0 +1,87 @@
+.note {
+  list-style: none;
+  max-width: 450px;
+  min-height: 150px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
+.note__title {
+  margin: 0;
+  max-width: 295px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.note__text {
+  margin: 0;
+  max-width: 295px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.note__text-container {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.note__btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.note__edit {
+  display: block;
+  background: url("../../images/edit_icon_257366.svg") center no-repeat;
+  background-size: 30px 30px;
+  min-height: 30px;
+  min-width: 30px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 250ms ease-in;
+}
+
+.note__edit:hover {
+  opacity: 0.8;
+}
+
+.note__delete {
+  display: block;
+  background: url("../../images/trush_square_icon_257909.svg") center no-repeat;
+  background-size: 30px 30px;
+  min-height: 30px;
+  min-width: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: opacity 250ms ease-in;
+}
+
+.note__delete:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1280px) {
+  .note__title {
+    max-width: 277px;
+  }
+
+  .note__text {
+    max-width: 277px;
+  }
+}
+
+@media (max-width: 768px) {
+  .note__title {
+    max-width: 235px;
+  }
+
+  .note__text {
+    max-width: 235px;
+  }
+}
