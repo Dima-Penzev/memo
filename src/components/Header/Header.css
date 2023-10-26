@@ -3,4 +3,11 @@
   background: transparent;
   backdrop-filter: blur(5px);
   align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 43px;
 }
